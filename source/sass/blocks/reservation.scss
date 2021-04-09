@@ -1,0 +1,17 @@
+.reservation__wrapper {
+  width: 315px;
+  text-align: center;
+  margin: 35px;
+}
+
+.reservation__wrapper p {
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.reservation__button {
+  font-size: 21px;
+  color: $mainwhite;
+  background-color: $lightblue;
+  padding: 14px 50px 17px 50px;
+}

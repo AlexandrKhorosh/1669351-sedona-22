@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+// Blocks
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/description.scss";
+@import "blocks/causes.scss";
+@import "blocks/box.scss";
+@import "blocks/card.scss";
+@import "blocks/reservation.scss";
+@import "blocks/social.scss";
+@import "blocks/contacts.scss";
