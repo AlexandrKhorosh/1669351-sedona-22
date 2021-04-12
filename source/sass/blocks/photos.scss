@@ -1,0 +1,29 @@
+.photos__wrapper {
+  width: 315px;
+}
+
+.photos__title {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 55px;
+  margin-bottom: 30px;
+}
+
+.photos__description {
+  width: 280px;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.photos__card {
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.photos__image {
+  width: 280px;
+  height: 280px;
+  background-color: $lightbrown;
+}
