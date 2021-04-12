@@ -1,0 +1,99 @@
+.form__block {
+  width: 380px;
+  display: grid;
+  margin-top: 30px;
+}
+
+.form__name {
+  width: 235px;
+  height: 58px;
+  border: none;
+  background-color: $smoke;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+.form__surname {
+  width: 200px;
+  height: 58px;
+  border: none;
+  background-color: $smoke;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.form__patronymic {
+  width: 200px;
+  height: 58px;
+  border: none;
+  background-color: $smoke;
+  padding-left: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.form__point {
+  display: grid;
+  text-align: initial;
+  margin-left: 55px;
+  margin-bottom: 20px;
+}
+
+.form__phone {
+  width: 285px;
+  height: 58px;
+  border: none;
+  margin-left: -15px;
+  margin-top: 10px;
+  padding-left: 15px;
+  background-color: $smoke;
+}
+
+.form__mail {
+  width: 285px;
+  height: 58px;
+  border: none;
+  margin-left: -15px;
+  margin-top: 10px;
+  padding-left: 15px;
+  background-color: $smoke;
+}
+
+.form__ico {
+  width: 58px;
+  height: 60px;
+  margin-top: -60px;
+  margin-left: 231px;
+  background-color: $darksmoke;
+}
+
+.form__impression {
+  margin-right: 20px;
+  margin-left: -15px;
+  margin-bottom: 30px;
+}
+
+.form__sights {
+  margin-right: 20px;
+  margin-left: -15px;
+  margin-bottom: 30px;
+}
+
+.form__emotions {
+  width: 276px;
+  height: 160px;
+  border: none;
+  background-color: $smoke;
+}
+
+.form__submit {
+  border: none;
+  font-size: 21px;
+  text-transform: uppercase;
+  background-color: $lightblue;
+  color: $mainwhite;
+  padding: 18px 36px 14px 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

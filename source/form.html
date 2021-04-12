@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body class="page__body">
@@ -42,7 +43,7 @@
   <section class="review">
     <div class="review__wrapper">
       <h2 class="review__title">Оставьте свой отзыв</h2>
-      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
+      <p class="review__text">Помогите нашим отелям стать лучше!<br> Оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
       <div class="review__form">
         <form method="get" action="https://echo.htmlacademy.ru" class="form">
           <div class="form__block name">
@@ -59,11 +60,11 @@
           </div>
           <div class="form__block contact">
             <h2 class="form__subtitle">Контактная информация:</h2>
-            <label>
+            <label class="form__point">
               Контактный телефон*:<input class="form__phone" type="text" placeholder="Введите телефон">
               <img src="img/icons/phone.svg.svg" alt="phone" class="form__ico phone">
             </label>
-            <label>
+            <label class="form__point">
               Электронная почта*:<input class="form__mail" type="text" placeholder="Введите e-mail">
               <img src="img/icons/mail.svg.svg" alt="mail" class="form__ico mail">
             </label>
@@ -71,35 +72,35 @@
           <div class="form__block impression">
             <h2 class="form__subtitle">Ваше общее впечатление:</h2>
             <label>
-              <input type="radio" name="impression" value="better" checked>Скорее положительное
+              <input class="form__impression" type="radio" name="impression" value="better" checked>Скорее положительное
             </label>
             <label>
-              <input type="radio" name="impression" value="worse">Скорее отрицательное
+              <input class="form__impression" type="radio" name="impression" value="worse">Скорее отрицательное
             </label>
             <label>
-              <input type="radio" name="impression" value="unclear">Затрудняюсь ответить
+              <input class="form__impression" type="radio" name="impression" value="unclear">Затрудняюсь ответить
             </label>
           </div>
           <div class="form__block visited-sight">
             <h2 class="form__subtitle">Посещенные достопримечательности:</h2>
             <label>
-              <input type="checkbox" name="sights" checked>Мост Дьявола
+              <input class="form__sights" type="checkbox" name="sights" checked>Мост Дьявола
             </label>
             <label>
-              <input type="checkbox" name="sights" checked>Гора-Колокол
+              <input class="form__sights" type="checkbox" name="sights" checked>Гора-Колокол
             </label>
             <label>
-              <input type="checkbox" name="sights" checked>Слайд-парк
+              <input class="form__sights" type="checkbox" name="sights" checked>Слайд-парк
             </label>
             <label>
-              <input type="checkbox" name="sights">Красные скалы
+              <input class="form__sights" type="checkbox" name="sights">Красные скалы
             </label>
           </div>
           <div class="form__block emotions">
             <h2 class="form__subtitle">Опишите свои эмоции:</h2>
-            <p><textarea name="text" placeholder="Опишите подробно все свои восторги"></textarea></p>
+            <p><textarea class="form__emotions" name="text" placeholder="Опишите подробно все свои восторги"></textarea></p>
           </div>
-          <button type="submit">Отправить отзыв</button>
+          <button class="form__submit" type="submit">Отправить отзыв</button>
         </form>
         </div>
       </div>
