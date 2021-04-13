@@ -3,3 +3,9 @@
   height: 260px;
   background-color: $darkbrown;
 }
+
+@media (min-width: $tablet-width) {
+  .box-background {
+    width: auto;
+  }
+}

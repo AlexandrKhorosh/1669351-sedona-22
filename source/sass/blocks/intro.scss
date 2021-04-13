@@ -9,3 +9,13 @@
 .intro__image {
   margin-top: 75px;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: auto;
+  }
+
+  .intro__image {
+    margin-left: -40px;
+  }
+}
