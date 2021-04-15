@@ -1,0 +1,32 @@
+@media (min-width: $tablet-width) {
+  .reason__list {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .reason__item {
+    width: 190px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason__list {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -110px;
+  }
+
+  .reason__item {
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .card__text {
+    width: 300px;
+  }
+}

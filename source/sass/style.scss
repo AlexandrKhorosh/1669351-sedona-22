@@ -5,6 +5,8 @@
 @import "global/fonts.scss";
 
 // Blocks
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/intro.scss";
@@ -12,8 +14,10 @@
 @import "blocks/causes.scss";
 @import "blocks/box.scss";
 @import "blocks/box-background.scss";
+@import "blocks/reason.scss";
 @import "blocks/card.scss";
 @import "blocks/reservation.scss";
+@import "blocks/map.scss";
 @import "blocks/social.scss";
 @import "blocks/contacts.scss";
 @import "blocks/promo.scss";
@@ -23,3 +27,5 @@
 @import "blocks/film.scss";
 @import "blocks/video.scss";
 @import "blocks/button.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";

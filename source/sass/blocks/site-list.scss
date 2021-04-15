@@ -1,0 +1,27 @@
+.site-list__link {
+  color: $black;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    width: 698px;
+    margin: 0 auto;
+  }
+
+  .site-list__link {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

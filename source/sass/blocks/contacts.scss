@@ -1,4 +1,16 @@
 .contacts__link {
   font-size: 21px;
   color: $black;
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__link {
+    margin: 0;
+  }
+
+  .contacts {
+    margin-top: 50px;
+  }
 }

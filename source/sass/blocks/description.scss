@@ -14,3 +14,21 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .description__wrapper {
+    width: 520px;
+    margin: auto;
+  }
+
+  .description__title {
+    width: 520px;
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .description__text {
+    width: 520px;
+    margin: 0 auto;
+  }
+}

@@ -15,3 +15,27 @@
   background-color: $lightblue;
   padding: 14px 50px 17px 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .reservation__wrapper {
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .reservation__button {
+    padding: 14px 105px 17px 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reservation__wrapper {
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .reservation__button {
+    padding: 14px 105px 17px 105px;
+  }
+}

@@ -1,7 +1,13 @@
 .page-header {
+  height: 60px;
   background-color: $mainwhite;
 }
 
 .site-list {
   list-style: none;
+  margin-top: 20px;
+}
+
+.page-header__logo {
+  position: absolute;
 }
