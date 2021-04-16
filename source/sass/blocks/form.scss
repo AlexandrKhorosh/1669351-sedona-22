@@ -4,6 +4,22 @@
   margin-top: 30px;
 }
 
+.form__area {
+  width: 400px;
+  border: none;
+}
+
+.form__subtitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__subtitle {
+    font-size: 21px;
+  }
+}
+
 .form__name {
   width: 235px;
   height: 58px;
@@ -31,6 +47,22 @@
   padding-left: 15px;
   margin-left: 20px;
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__name {
+    width: 150px;
+  }
+
+  .form__surname {
+    width: 150px;
+    margin-left: 50px;
+  }
+
+  .form__patronymic {
+    width: 150px;
+    margin-left: 53px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -234,6 +266,7 @@
 
   .impression {
     order: 1;
+    vertical-align: middle;
   }
 
   .sight {
@@ -243,11 +276,11 @@
 
 @media (min-width: $tablet-width) {
   .form__adduce-name {
-    margin-left: -150px;
+    margin-left: -111px;
   }
 
   .form__adduce-emotions {
-    margin-left: -120px;
+    margin-left: -30px;
   }
 
   .form__submit {
@@ -264,19 +297,19 @@
 
 @media (min-width: $desktop-width) {
   .form__adduce-name {
-    margin-left: -220px;
+    margin-left: -111px;
   }
 
   .form__adduce-impression {
-    margin-left: 100px;
+    margin-left: 30px;
   }
 
   .form__adduce-contact {
-    margin-left: 130px;
+    margin-left: 70px;
   }
 
   .form__adduce-emotions {
-    margin-left: -90px;
+    margin-left: -50px;
   }
 
   .form__submit {
