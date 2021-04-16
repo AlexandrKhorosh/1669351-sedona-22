@@ -17,3 +17,36 @@
   text-align: center;
   margin-top: 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .review__wrapper {
+    width: 500px;
+    margin: auto;
+  }
+
+  .review__title {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+
+  .review__text {
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__wrapper {
+    width: 960px;
+    margin: auto;
+  }
+
+  .review__title {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+
+  .review__text {
+    width: 440px;
+    margin-left: 230px;
+  }
+}
