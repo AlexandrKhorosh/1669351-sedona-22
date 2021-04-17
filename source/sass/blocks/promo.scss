@@ -11,3 +11,16 @@
 .promo__title {
   padding-top: 75px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: auto;
+    height: 350px;
+    margin-top: -120px;
+  }
+
+  .promo__title {
+    font-size: 150px;
+    padding-top: 130px;
+  }
+}

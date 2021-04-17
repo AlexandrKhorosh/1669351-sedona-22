@@ -43,64 +43,79 @@
   <section class="review">
     <div class="review__wrapper">
       <h2 class="review__title">Оставьте свой отзыв</h2>
-      <p class="review__text">Помогите нашим отелям стать лучше!<br> Оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
+      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <div class="review__form">
         <form method="get" action="https://echo.htmlacademy.ru" class="form">
-          <div class="form__block name">
-            <h2 class="form__subtitle">Представьтесь:</h2>
-            <label>
-              Имя*:<input class="form__name" type="text" placeholder="Петр">
-            </label>
-            <label>
-              Фамилия*:<input class="form__surname" type="text" placeholder="Иванов">
-            </label>
-            <label>
-              Отчество:<input class="form__patronymic" type="text" placeholder="Александрович">
-            </label>
+          <div class="form__test">
+            <div class="form__block name">
+              <fieldset class="form__area">
+                <legend class="form__subtitle form__adduce-name">Представьтесь:</legend>
+                <label>
+                  Имя*:<input class="form__name" type="text" placeholder="Петр">
+                </label>
+                <label>
+                  Фамилия*:<input class="form__surname" type="text" placeholder="Иванов">
+                </label>
+                <label>
+                  Отчество:<input class="form__patronymic" type="text" placeholder="Александрович">
+                </label>
+              </fieldset>
+            </div>
+            <div class="form__block contact">
+              <fieldset class="form__area">
+                <legend class="form__subtitle form__adduce-contact">Контактная информация:</legend>
+                <div class="form__point-block">
+                  <label class="form__point">
+                    Контактный телефон*:<input class="form__phone" type="text" placeholder="Введите телефон">
+                    <img src="img/icons/phone.svg.svg" alt="phone" class="form__ico phone">
+                  </label>
+                  <label class="form__point">
+                    Электронная почта*:<input class="form__mail" type="text" placeholder="Введите e-mail">
+                    <img src="img/icons/mail.svg.svg" alt="mail" class="form__ico mail">
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__block impression">
+              <fieldset class="form__area">
+                <legend class="form__subtitle form__adduce-impression">Ваше общее впечатление:</legend>
+                <label>
+                  <input class="form__impression" type="radio" name="impression" value="better" checked>Скорее положительное
+                </label>
+                <label>
+                  <input class="form__impression" type="radio" name="impression" value="worse">Скорее отрицательное
+                </label>
+                <label>
+                  <input class="form__impression" type="radio" name="impression" value="unclear">Затрудняюсь ответить
+                </label>
+              </fieldset>
+            </div>
           </div>
-          <div class="form__block contact">
-            <h2 class="form__subtitle">Контактная информация:</h2>
-            <label class="form__point">
-              Контактный телефон*:<input class="form__phone" type="text" placeholder="Введите телефон">
-              <img src="img/icons/phone.svg.svg" alt="phone" class="form__ico phone">
-            </label>
-            <label class="form__point">
-              Электронная почта*:<input class="form__mail" type="text" placeholder="Введите e-mail">
-              <img src="img/icons/mail.svg.svg" alt="mail" class="form__ico mail">
-            </label>
-          </div>
-          <div class="form__block impression">
-            <h2 class="form__subtitle">Ваше общее впечатление:</h2>
-            <label>
-              <input class="form__impression" type="radio" name="impression" value="better" checked>Скорее положительное
-            </label>
-            <label>
-              <input class="form__impression" type="radio" name="impression" value="worse">Скорее отрицательное
-            </label>
-            <label>
-              <input class="form__impression" type="radio" name="impression" value="unclear">Затрудняюсь ответить
-            </label>
-          </div>
-          <div class="form__block visited-sight">
-            <h2 class="form__subtitle">Посещенные достопримечательности:</h2>
-            <label>
-              <input class="form__sights" type="checkbox" name="sights" checked>Мост Дьявола
-            </label>
-            <label>
-              <input class="form__sights" type="checkbox" name="sights" checked>Гора-Колокол
-            </label>
-            <label>
-              <input class="form__sights" type="checkbox" name="sights" checked>Слайд-парк
-            </label>
-            <label>
-              <input class="form__sights" type="checkbox" name="sights">Красные скалы
-            </label>
+          <div class="form__block sight">
+            <fieldset class="form__area">
+              <legend class="form__subtitle form__adduce-sight">Посещенные достопримечательности:</legend>
+              <div class="form__sight-block">
+                <label>
+                  <input class="form__sights" type="checkbox" name="sights" checked>Мост Дьявола
+                </label>
+                <label>
+                  <input class="form__sights" type="checkbox" name="sights" checked>Гора-Колокол
+                </label>
+                <label>
+                  <input class="form__sights" type="checkbox" name="sights" checked>Слайд-парк
+                </label>
+                <label>
+                  <input class="form__sights" type="checkbox" name="sights">Красные скалы
+                </label>
+              </div>
+            </fieldset>
           </div>
           <div class="form__block emotions">
-            <h2 class="form__subtitle">Опишите свои эмоции:</h2>
+            <h2 class="form__subtitle form__adduce-emotions">Опишите свои эмоции:</h2>
             <p><textarea class="form__emotions" name="text" placeholder="Опишите подробно все свои восторги"></textarea></p>
           </div>
           <button class="form__submit" type="submit">Отправить отзыв</button>
+          <span class="form__necessarily">*-Обязательные поля</span>
         </form>
         </div>
       </div>
@@ -108,7 +123,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
           <div class="page-footer__contacts contacts">
-            <a class="contacts__link" href="https://twitter.com/htmlacademy_ru"></a>
+            <a class="contacts__link" href="https://htmlacademy.ru">#visitsedona</a>
           </div>
           <div class="page-footer__social social">
             <ul class="social__list">
