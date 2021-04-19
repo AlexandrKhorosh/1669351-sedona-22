@@ -27,3 +27,27 @@
   height: 280px;
   background-color: $lightbrown;
 }
+
+@media (min-width: $tablet-width) {
+  .photos__wrapper {
+    width: 400px;
+    margin: auto;
+  }
+
+  .photos__title {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-right: 70px;
+  }
+
+  .photos__description {
+    width: 420px;
+    margin-left: -20px;
+    margin-bottom: 90px;
+  }
+
+  .photos__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -10,3 +10,22 @@
 .button__screen {
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .button__replay {
+    border: none;
+    margin-right: 365px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 900px;
+    margin-left: -2px;
+  }
+
+  .button__replay {
+    border: none;
+    margin-right: 530px;
+  }
+}
