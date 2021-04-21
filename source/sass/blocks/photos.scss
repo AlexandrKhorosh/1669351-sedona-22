@@ -22,12 +22,6 @@
   margin-bottom: 40px;
 }
 
-.photos__image {
-  width: 280px;
-  height: 280px;
-  background-color: $lightbrown;
-}
-
 @media (min-width: $tablet-width) {
   .photos__wrapper {
     width: 400px;
