@@ -41,3 +41,89 @@
   background-color: $smoke;
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .video-menu__wrapper {
+    width: 600px;
+    margin-bottom: 50px;
+  }
+
+  .video__scale {
+    width: 648px;
+    height: 93px;
+    background-color: $black;
+    opacity: 0.6;
+    margin-left: -100px;
+  }
+
+  .video__bar {
+    width: 389px;
+    height: 3px;
+    background-color: $mainwhite;
+    opacity: 0.2;
+    position: absolute;
+    margin-left: 93px;
+    margin-top: 45px;
+  }
+
+  .video__toggle {
+    width: 13px;
+    height: 13px;
+    background-color: $mainwhite;
+    position: absolute;
+    margin-top: -52px;
+    margin-left: 80px;
+    border-radius: 50%;
+  }
+
+  .video__button {
+    width: 648px;
+    background-color: transparent;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: -100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-menu__wrapper {
+    width: 900px;
+    margin-bottom: 50px;
+  }
+
+  .video__scale {
+    width: 800px;
+    height: 93px;
+    background-color: $black;
+    opacity: 0.6;
+    margin-left: 50px;
+  }
+
+  .video__bar {
+    width: 540px;
+    height: 3px;
+    background-color: $mainwhite;
+    opacity: 0.2;
+    position: absolute;
+    margin-left: 93px;
+    margin-top: 45px;
+  }
+
+  .video__toggle {
+    width: 13px;
+    height: 13px;
+    background-color: $mainwhite;
+    position: absolute;
+    margin-top: -52px;
+    margin-left: 330px;
+    border-radius: 50%;
+  }
+
+  .video__button {
+    width: 648px;
+    background-color: transparent;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: 150px;
+  }
+}

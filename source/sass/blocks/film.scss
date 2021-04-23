@@ -14,3 +14,39 @@
   width: 310px;
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .film__wrapper {
+    width: 400px;
+    margin: auto;
+  }
+
+  .film__title {
+    font-size: 30px;
+  }
+
+  .film__description {
+    width: 480px;
+    font-size: 14px;
+    margin-left: -30px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .film__wrapper {
+    width: 900px;
+    margin: auto;
+  }
+
+  .film__title {
+    font-size: 30px;
+  }
+
+  .film__description {
+    width: 480px;
+    font-size: 14px;
+    margin-left: 220px;
+    margin-bottom: 80px;
+  }
+}
