@@ -1,0 +1,38 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 280px;
+  box-shadow: 0 7px 15px 0 rgba(black, 0.15);
+}
+
+.popup__text-placeholder {
+  padding: 35px 50px;
+  background-color: white;
+}
+
+.popup__btn-placeholder {
+  padding: 20px;
+  background-color: $sedona-gray;
+}
+
+.popup__title,
+.popup__message {
+  margin-bottom: 30px;
+}
+
+.popup__btn {
+  min-width: 180px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.popup--success {
+  .popup__message {
+    margin-bottom: 0;
+  }
+}

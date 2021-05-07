@@ -1,31 +1,62 @@
-.button__replay {
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding: 15px 20px;
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $sedona-blue;
   border: none;
-  padding-right: 50px;
-}
+  cursor: pointer;
 
-.button__subtitle {
-  border: none;
-}
-
-.button__screen {
-  border: none;
-}
-
-@media (min-width: $tablet-width) {
-  .button__replay {
-    border: none;
-    margin-right: 365px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button {
-    width: 900px;
-    margin-left: -2px;
+  &:hover,
+  &:focus {
+    background-color: $sedona-dark-blue;
+    outline: none;
+    transition: background-color 0.3s;
   }
 
-  .button__replay {
-    border: none;
-    margin-right: 530px;
+  &:active {
+    background-color: $sedona-darkest-blue;
+    color: rgba(white, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $sedona-dark-gray;
+  }
+
+  &--w-100 {
+    width: 100%;
+  }
+
+  &--social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 46px;
+    min-height: 48px;
+    padding: 0;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: white;
+    }
+
+    &:active {
+      svg {
+        fill: rgba(white, 0.3);
+        transition: fill 0.3s;
+      }
+    }
   }
 }

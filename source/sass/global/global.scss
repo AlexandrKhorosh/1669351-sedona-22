@@ -1,32 +1,61 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: $lightblack;
-  text-transform: uppercase;
-  background-color: $mainwhite;
+html {
+  background-color: $sedona-gray;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+body {
+  width: $mobile-width;
+  margin: 0 auto;
   padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  box-shadow: 0 5px 15px 0 rgba(black, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+@media (min-width: $tablet-width) {
+  body {
+    width: $tablet-width;
+  }
 }
 
-a {
-  text-decoration: none;
+@media (min-width: $desktop-width) {
+  body {
+    width: $desktop-width;
+  }
 }
