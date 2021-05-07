@@ -11,7 +11,7 @@
 <body>
 <header class="header header--no-js">
   <nav class="header__site-navigation header__site-navigation--closed">
-    <div class="header__site-navigation__wrapper">
+    <div class="header__wrapper">
       <ul class="site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="index.html">Главная</a>
@@ -50,7 +50,7 @@
   <section class="intro">
     <div class="intro-bill billboard billboard--altered">
       <h1 class="visually-hidden">Добро пожаловать в Sedona</h1>
-      <img class="billboard__sedona" src="img/embed-svg/text-sedona.svg" alt="Sedona">
+      <img class="billboard__sedona" src="img/text-sedona.svg" alt="Sedona">
     </div>
   </section>
     <div class="main__text">
@@ -62,7 +62,7 @@
       <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review-form__fieldset review-form__fieldset--w-50">
           <fieldset class="fieldset fieldset--name">
-            <legend class="fieldset__legend heading heading--2"><span>Представьтесь:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Представьтесь:</span></legend>
             <label class="fieldset__label fieldset__label--row fieldset__label--required">
               <span class="fieldset__label-text">Имя*:</span>
               <input class="fieldset__input" type="text" name="firstname" placeholder="Петр" required>
@@ -79,7 +79,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-100">
           <fieldset class="fieldset fieldset--contact">
-            <legend class="fieldset__legend heading heading--2"><span>Контактная информация:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Контактная информация:</span></legend>
             <div class="fieldset__wrapper">
               <label class="fieldset__label fieldset__label--required">
                 <span class="fieldset__label-text"><span>Контактный </span>телефон*:</span>
@@ -96,7 +96,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-50 review-form__fieldset--expresion">
           <fieldset class="fieldset fieldset--expresion">
-            <legend class="fieldset__legend heading heading--2"><span>Ваше общее впечатление:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Ваше общее впечатление:</span></legend>
             <label class="fieldset__label fieldset__label--radio radio">
               <input class="radio__input visually-hidden" type="radio" name="impression" value="positive" checked>
               <span class="radio__indicator"></span>
@@ -116,7 +116,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-100">
           <fieldset class="fieldset fieldset--sights">
-            <legend class="fieldset__legend heading heading--2"><span>Посещенные <br>достопримечательности:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Посещенные <br>достопримечательности:</span></legend>
             <div class="fieldset__wrapper">
               <label class="fieldset__label fieldset__label--checkbox checkbox">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" checked>
@@ -143,7 +143,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-100">
           <fieldset class="fieldset fieldset--emotions">
-            <legend class="fieldset__legend heading heading--2"><span>Опишите свои эмоции:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Опишите свои эмоции:</span></legend>
             <textarea class="fieldset__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </div>
@@ -155,8 +155,8 @@
     </section>
 </main>
 <footer class="footer">
-    <p class="footer__hash-tag">#visitsedona</p>
-    <div class="footer__social-list">
+    <p class="footer__hash-tag footer__zeroing">#visitsedona</p>
+    <div class="footer__social-list footer__zeroing">
       <ul class="social-list">
         <li class="social-list__item">
           <a class="btn btn--social btn--twitter" href="#" title="Twitter">
@@ -185,7 +185,7 @@
       </ul>
     </div>
     <div class="footer__copyright-page">
-      <p class="footer__copyright">
+      <p class="footer__copyright footer__zeroing">
         Разработано
         <a class="footer__logo-htmlacademy logo-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Htmlacademy</span>
@@ -211,6 +211,5 @@
   </div>
 </div>
 <script src="/js/app.js"></script>
-<script src="/js/picturefill.min.js"></script>
 </body>
 </html>

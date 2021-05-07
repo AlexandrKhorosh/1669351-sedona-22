@@ -97,7 +97,17 @@
   padding-right: 66px;
 }
 
-.fieldset__input--tel-icon + .fieldset__input-icon,
+.fieldset__input--tel-icon + .fieldset__input-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+  width: 56px;
+  height: 56px;
+  background: url("../img/icon-phone.svg") #e6e6e6 no-repeat center center;
+}
+
 .fieldset__input--email-icon + .fieldset__input-icon {
   position: absolute;
   right: 0;
@@ -106,13 +116,6 @@
   content: "";
   width: 56px;
   height: 56px;
-}
-
-.fieldset__input--tel-icon + .fieldset__input-icon {
-  background: url("../img/icon-phone.svg") #e6e6e6 no-repeat center center;
-}
-
-.fieldset__input--email-icon + .fieldset__input-icon {
   background: url("../img/icon-mail.svg") #e6e6e6 no-repeat center center;
 }
 
@@ -149,7 +152,7 @@
     overflow: hidden;
     margin-bottom: 25px;
 
-    span {
+    .fieldset__title {
       display: inline-block;
       position: relative;
 
@@ -180,7 +183,16 @@
     margin-top: 10px;
   }
 
-  .fieldset--expresion .fieldset__legend,
+  .fieldset--expresion .fieldset__legend {
+    text-align: left;
+    margin-bottom: 60px;
+
+    span::before,
+    span::after {
+      display: none;
+    }
+  }
+
   .fieldset--name .fieldset__legend {
     text-align: left;
     margin-bottom: 60px;
