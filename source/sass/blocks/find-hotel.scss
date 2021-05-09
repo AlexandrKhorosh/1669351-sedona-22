@@ -1,0 +1,80 @@
+.find-hotel {
+  padding: 25px 20px 55px;
+
+  .find-hotel__btn {
+    font-size: 21px;
+    line-height: 26px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $sedona-blue;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $sedona-dark-blue;
+      outline: none;
+      transition: background-color 0.3s;
+    }
+
+    &:active {
+      background-color: $sedona-darkest-blue;
+      color: rgba(white, 0.3);
+      transition: background-color 0.3s, color 0.3s;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: $sedona-dark-gray;
+    }
+  }
+}
+
+.find-hotel__title {
+  margin: 0 0 20px;
+  font-size: 21px;
+}
+
+.find-hotel__desc {
+  margin: 0 0 35px;
+  line-height: 24px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .find-hotel__desc {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel {
+    padding: 55px 155px 60px;
+  }
+
+  .find-hotel__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .find-hotel__desc {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-hotel {
+    padding: 60px 370px 65px;
+  }
+
+  .find-hotel__desc {
+    margin-bottom: 44px;
+  }
+}

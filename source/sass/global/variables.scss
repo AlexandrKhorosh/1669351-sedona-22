@@ -1,22 +1,21 @@
 // Colors
 
-$mainwhite: #ffffff;
-$smoke: #f2f2f2;
-$darksmoke: #e6e6e6;
-$black: #000000;
-$lightblack: #333333;
-$lightblue: #81b3d2;
-$blue: #669ec0;
-$darkblue: #5496bd;
-$darkgray: #5c6870;
-$dimgray: #666666;
-$lightgray: #eeeeee;
-$gray: #e5e5e5;
-$midlegray: #d5d5d5;
-$lightbrown: #766357;
-$darkbrown: #604e43;
+$sedona-blue: #81b3d2;
+$sedona-dark-blue: #669ec0;
+$sedona-darkest-blue: #5496bd;
+$sedona-gray: #f2f2f2;
+$sedona-dark-gray: #e5e5e5;
+$sedona-darkest-gray: #d5d5d5;
+$sedona-gray-text: #333333;
+$sedona-brown: #766357;
+$sedona-dark-brown: #604e43;
 
 // Viewports
 
+$mobile-width: 320px;
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

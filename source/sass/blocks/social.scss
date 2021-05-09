@@ -1,21 +1,9 @@
-.social__list {
-  list-style: none;
+.social-list {
+  @include reset-list();
   display: flex;
+  justify-content: center;
 }
 
-.social__item {
-  width: 46px;
-  height: 30px;
-  text-align: center;
-  margin: 3px;
-  padding-top: 13px;
-  background-color: $lightblue;
-}
-
-@media (min-width: $tablet-width) {
-  .social__list {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 50px;
-  }
+.social-list__item {
+  margin: 0 3px;
 }

@@ -1,0 +1,15 @@
+.reasons-list {
+  @include reset-list();
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-list,
+  .reasons-list__item--group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reason--bridge {
+    order: 2;
+  }
+}

@@ -1,32 +1,217 @@
-@media (min-width: $tablet-width) {
-  .reason__list {
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
+.reason {
+  position: relative;
+  padding: 25px 30px 30px;
+  background-color: #eeeeee;
+}
+
+.reason--blue {
+  padding: 35px 20px 40px;
+  color: white;
+  background-color: $sedona-blue;
+}
+
+.reason--photo {
+  width: 320px;
+  height: 260px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.reason--with-icon {
+  background-color: white;
+}
+
+.reason__title {
+  margin: 0 0 10px;
+}
+
+.reason__number {
+  margin: 0 0 15px;
+}
+
+.reason__desc {
+  margin-bottom: 0;
+}
+
+.reason__photo {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.reason__icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  fill: $sedona-blue;
+}
+
+@media (max-width: $mobile-width-only) {
+  .reason__title,
+  .reason__desc {
+    br {
+      display: none;
+    }
   }
 
-  .reason__item {
-    width: 190px;
+  .reason--triangle {
+    padding-top: 80px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      content: "";
+      width: 320px;
+      height: 37px;
+      background: url("../img/bg-triangle.svg") no-repeat;
+    }
+  }
+
+  .reason--border {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      content: "";
+      height: 1px;
+      width: 87.5%;
+      background-color: $sedona-darkest-gray;
+      transform: translateX(-50%);
+    }
+  }
+
+  .reason--with-icon {
+    padding: 30px 40px 0 70px;
+    text-align: left;
+    background-color: white;
+
+    &:last-child {
+      padding-bottom: 40px;
+    }
+  }
+
+  .reason__icon {
+    &--house {
+      width: 37px;
+      height: 36px;
+    }
+
+    &--gift {
+      width: 32px;
+      height: 37px;
+    }
+
+    &--burger {
+      width: 38px;
+      height: 35px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason {
+    box-sizing: border-box;
+    width: 256px;
+    min-height: 256px;
+    padding: 45px 50px;
+  }
+
+  .reason--blue {
+    padding: 45px;
+
+    .reason__desc {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .reason__number {
+    margin: 0 0 20px;
+  }
+
+  .reason--photo {
+    display: flex;
+    box-sizing: border-box;
+    width: 512px;
+    height: 256px;
+    padding: 0;
+  }
+
+  .reason--with-icon {
+    min-height: 330px;
+    padding: 160px 45px 60px;
     text-align: center;
+
+    .reason__title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .reason--gift {
+    order: 3;
+  }
+
+  .reason__icon {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reason__photo {
+    width: 512px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .reason__list {
+  .reason {
+    width: 400px;
+    padding: 45px 50px 40px;
+  }
+
+  .reason--blue {
+    padding: 50px 50px 40px;
+
+    .reason__title {
+      margin-bottom: 15px;
+    }
+
+    .reason__desc {
+      margin-top: 17px;
+      margin-left: -4px;
+
+      br {
+        display: inline;
+      }
+    }
+  }
+
+  .reason--photo {
     width: 800px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: -110px;
+    height: 256px;
+    padding: 0;
   }
 
-  .reason__item {
-    width: 300px;
-    font-size: 14px;
+  .reason--with-icon {
+    min-height: 330px;
+    padding: 160px 45px 60px;
     text-align: center;
+
+    .reason__title {
+      margin-bottom: 20px;
+    }
   }
 
-  .card__text {
-    width: 300px;
+  .reason__photo {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    background-size: cover;
+    transform: translate(-50%, -50%);
   }
 }

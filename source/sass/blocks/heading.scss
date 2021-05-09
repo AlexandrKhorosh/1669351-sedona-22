@@ -1,0 +1,17 @@
+.heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .heading {
+    &--1 {
+      font-size: 30px;
+    }
+
+    &--2 {
+      font-size: 21px;
+    }
+  }
+}
