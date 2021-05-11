@@ -43,6 +43,18 @@
     padding: 50px 140px;
   }
 
+  .main__text-catalog {
+    margin-top: -225px;
+    position: relative;
+    background-color: white;
+  }
+
+  .main__text-form {
+    margin-top: -225px;
+    position: relative;
+    background-color: white;
+  }
+
   .main__desc {
     line-height: 26px;
   }
@@ -50,7 +62,7 @@
   .main {
     &--photo {
       .main__text {
-        padding: 75px 170px 65px;
+        padding: 65px 170px 65px;
       }
     }
 
@@ -67,8 +79,20 @@
     padding: 50px 355px;
   }
 
+  .main__text-catalog {
+    margin-top: -215px;
+    position: relative;
+    background-color: white;
+  }
+
+  .main__text-form {
+    margin-top: -215px;
+    position: relative;
+    background-color: white;
+  }
+
   .main--photo .main__text {
-    padding: 115px 380px 70px;
+    padding: 104px 380px 70px;
   }
 
   .main--form .main__text {

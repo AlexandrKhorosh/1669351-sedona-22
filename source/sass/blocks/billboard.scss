@@ -5,7 +5,7 @@
 
 .billboard__sedona {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 23px;
 }
 
 .billboard {
@@ -66,11 +66,38 @@
   .billboard__text {
     width: 460px;
   }
+
+  .billboard--altered {
+    min-height: 518px;
+    padding-top: 80px;
+    margin-top: 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position-y: -225px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+      background-position-y: -225px;
+    }
+
+    &::after {
+      width: 768px;
+      height: 57px;
+      bottom: 225px;
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+    }
+
+    &--compact {
+      min-height: 290px;
+      padding-top: 95px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .billboard {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position-y: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -78,7 +105,29 @@
     }
 
     &::after {
-      bottom: -1px;
+      bottom: 0;
+      width: 1200px;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+    }
+
+    &--compact {
+      min-height: 300px;
+      padding-top: 100px;
+    }
+  }
+
+  .billboard--altered {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position-y: -215px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-position-y: -215px;
+    }
+
+    &::after {
+      bottom: 215px;
       width: 1200px;
       background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
     }
