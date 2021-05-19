@@ -68,8 +68,16 @@
 
 .checkbox__input:checked:disabled + .checkbox__indicator {
   background-color: $sedona-darkest-gray;
-  background-image: url("../../img/tick.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    display: block;
+    content: "";
+    width: 23px;
+    height: 16px;
+    background-image: url("../../img/tick.svg");
+  }
 }
