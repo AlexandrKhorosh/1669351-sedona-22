@@ -53,19 +53,19 @@
   <section class="intro">
     <div class="intro-bill billboard billboard--altered">
       <h1 class="visually-hidden">Добро пожаловать в Sedona</h1>
-      <img class="billboard__sedona" src="img/text-sedona.svg" alt="Sedona">
+      <img class="billboard__sedona" src="img/text-sedona.svg" width="229px" height="39px" alt="Sedona">
     </div>
   </section>
     <div class="main__text main__text-form">
-      <h2 class="main__title heading heading--1">Оставьте свой отзыв</h2>
-      <p class="main__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="main__title main__title-form heading heading--1">Оставьте свой отзыв</h2>
+      <p class="main__desc main__desc-form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
     <section class="reviews">
       <h2 class="visually-hidden">Отзыв</h2>
       <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="review-form__fieldset review-form__fieldset--w-50">
           <fieldset class="fieldset fieldset--name">
-            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Представьтесь:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title fieldset__title--1">Представьтесь:</span></legend>
             <label class="fieldset__label fieldset__label--row fieldset__label--required">
               <span class="fieldset__label-text">Имя*:</span>
               <input class="fieldset__input" type="text" name="firstname" placeholder="Петр" required>
@@ -82,7 +82,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-100">
           <fieldset class="fieldset fieldset--contact">
-            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Контактная информация:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title fieldset__title--2">Контактная информация:</span></legend>
             <div class="fieldset__wrapper">
               <label class="fieldset__label fieldset__label--required">
                 <span class="fieldset__label-text"><span>Контактный </span>телефон*:</span>
@@ -99,14 +99,14 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-50 review-form__fieldset--expresion">
           <fieldset class="fieldset fieldset--expresion">
-            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Ваше общее впечатление:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title fieldset__title--3">Ваше общее впечатление:</span></legend>
             <label class="fieldset__label fieldset__label--radio radio">
               <input class="radio__input visually-hidden" type="radio" name="impression" value="positive" checked>
               <span class="radio__indicator"></span>
               <span class="radio__label">Скорее положительное</span>
             </label>
             <label class="fieldset__label fieldset__label--radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="impression" value="negative">
+              <input class="radio__input visually-hidden" type="radio" name="impression" value="negative" checked disabled>
               <span class="radio__indicator"></span>
               <span class="radio__label">Скорее отрицательное</span>
             </label>
@@ -119,7 +119,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-100">
           <fieldset class="fieldset fieldset--sights">
-            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Посещенные <br>достопримечательности:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title fieldset__title--4">Посещенные <br>достопримечательности:</span></legend>
             <div class="fieldset__wrapper">
               <label class="fieldset__label fieldset__label--checkbox checkbox">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" checked>
@@ -132,7 +132,7 @@
                 <span class="checkbox__label">Гора-Колокол</span>
               </label>
               <label class="fieldset__label fieldset__label--checkbox checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="park" checked>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="park" checked disabled>
                 <span class="checkbox__indicator"></span>
                 <span class="checkbox__label">Слайд-парк</span>
               </label>
@@ -146,7 +146,7 @@
         </div>
         <div class="review-form__fieldset review-form__fieldset--w-100">
           <fieldset class="fieldset fieldset--emotions">
-            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title">Опишите свои эмоции:</span></legend>
+            <legend class="fieldset__legend heading heading--2"><span class="fieldset__title fieldset__title--5">Опишите свои эмоции:</span></legend>
             <textarea class="fieldset__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </div>
