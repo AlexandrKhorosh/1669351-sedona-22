@@ -35,6 +35,7 @@
   align-items: center;
   height: 56px;
   padding-left: 80px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -57,5 +58,26 @@
         transition: opacity 0.3s;
       }
     }
+  }
+}
+
+.checkbox__input:disabled + .checkbox__indicator {
+  background-color: $sedona-darkest-gray;
+  cursor: pointer;
+}
+
+.checkbox__input:checked:disabled + .checkbox__indicator {
+  background-color: $sedona-darkest-gray;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    display: block;
+    content: "";
+    width: 23px;
+    height: 16px;
+    background-image: url("../../img/tick.svg");
   }
 }

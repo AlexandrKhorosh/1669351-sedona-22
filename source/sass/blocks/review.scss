@@ -1,4 +1,11 @@
+.reviews {
+  position: relative;
+  background-color: white;
+  margin-top: -8px;
+}
+
 .review-form {
+  margin-top: 9px;
   margin-bottom: 10px;
 }
 
@@ -14,6 +21,7 @@
 
 .review-form__submit-btn {
   width: 100%;
+  font-size: 18px;
 }
 
 .review-form__required-fields {
@@ -74,9 +82,17 @@
     padding: 0 120px 60px;
   }
 
+  .review-form__submit-btn {
+    margin-top: -4px;
+  }
+
   .review-form__fieldset {
     &--w-50 {
       margin-bottom: 70px;
     }
+  }
+
+  .review-form__required-fields {
+    margin-top: 2px;
   }
 }

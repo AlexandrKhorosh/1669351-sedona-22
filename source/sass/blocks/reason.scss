@@ -122,16 +122,22 @@
 
   .reason--blue {
     padding: 45px;
+    height: 250px;
 
     .reason__desc {
       br {
         display: none;
       }
+      margin-top: 23px;
     }
   }
 
+  .reasons {
+    margin-top: 22px;
+  }
+
   .reason__number {
-    margin: 0 0 20px;
+    margin: 20px 0 30px;
   }
 
   .reason--photo {
@@ -146,6 +152,7 @@
     min-height: 330px;
     padding: 160px 45px 60px;
     text-align: center;
+    margin-bottom: -20px;
 
     .reason__title {
       margin-bottom: 20px;
@@ -200,6 +207,7 @@
     min-height: 330px;
     padding: 160px 45px 60px;
     text-align: center;
+    margin-bottom: 0;
 
     .reason__title {
       margin-bottom: 20px;

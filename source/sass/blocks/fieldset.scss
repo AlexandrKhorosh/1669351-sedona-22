@@ -138,7 +138,6 @@
     display: flex;
     flex-direction: column;
 
-    /* flex is not working with <fieldset> in Chrome */
     > .fieldset__wrapper {
       display: flex;
     }
@@ -177,6 +176,36 @@
         margin-left: 55px;
       }
     }
+  }
+
+  .fieldset__title--3 {
+    margin-left: -1px;
+    margin-top: 2px;
+  }
+
+  .fieldset__title--1 {
+    margin-left: -2px;
+    margin-top: 2px;
+  }
+
+  .fieldset__title--2 {
+    margin-left: -3px;
+  }
+
+  .fieldset__title--4 {
+    margin-top: -4px;
+    margin-left: -1px;
+    line-height: 25px;
+  }
+
+  .fieldset__title--5 {
+    margin-top: 9px;
+    margin-left: -3px;
+  }
+
+  .fieldset__textarea {
+    margin-top: -7px;
+    margin-bottom: 1px;
   }
 
   .fieldset__input {
@@ -230,7 +259,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 0 95px;
-      margin: -15px 0;
+      margin: -18px 0;
     }
 
     .fieldset__label {
@@ -248,6 +277,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .fieldset__title--3 {
+    margin-left: 5px;
+    margin-bottom: -3px;
+  }
+
+  .fieldset__title--2 {
+    margin-top: 2px;
+    margin-left: -4px;
+  }
+
+  .fieldset__title--4 {
+    margin-top: -4px;
+    margin-left: -6px;
+    margin-bottom: -4px;
+    line-height: 25px;
+  }
+
+  .fieldset__title--5 {
+    margin-top: 14px;
+    margin-left: -4px;
+  }
+
   .fieldset--name {
     padding-left: 80px;
   }
@@ -306,5 +357,10 @@
 
   .fieldset--expresion .fieldset__legend {
     padding-left: 75px;
+  }
+
+  .fieldset__textarea {
+    margin-top: -5px;
+    margin-bottom: -1px;
   }
 }

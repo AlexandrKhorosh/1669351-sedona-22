@@ -1,26 +1,57 @@
 .main__text {
-  margin-top: 8px;
+  margin-top: -20px;
   margin-bottom: -8px;
   padding: 40px 25px 30px;
 }
 
 .main__text-catalog {
-  margin-top: -10px;
+  margin-top: -230px;
   margin-bottom: 8px;
+  z-index: 20;
+  position: relative;
+  background-color: white;
+}
+
+.main__text-form {
+  margin-top: -230px;
+  margin-bottom: 8px;
+  z-index: 20;
+  position: relative;
+  background-color: white;
 }
 
 .main__title {
-  margin: 0 0 30px;
+  margin: 14px 0 30px;
+}
+
+.main__title-catalog {
+  margin-top: -2px;
+  margin-left: 2px;
+  margin-bottom: 28px;
 }
 
 .main__desc {
   margin: 0;
+  margin-bottom: 12px;
   line-height: 24px;
   color: $sedona-gray-text;
 
   .main__page & {
     line-height: 26px;
   }
+}
+
+.main__desc-catalog {
+  margin-left: 0;
+  margin-bottom: 3px;
+  width: 275px;
+}
+
+.main__desc-form {
+  margin-left: -14px;
+  margin-top: -2px;
+  margin-bottom: 12px;
+  width: 330px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -40,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .main__text {
-    padding: 50px 140px;
+    padding: 53px 140px 26px 140px;
   }
 
   .main__text-catalog {
@@ -53,10 +84,29 @@
     margin-top: -225px;
     position: relative;
     background-color: white;
+
+    h2 {
+      margin-top: -10px;
+    }
+
+    p {
+      margin-bottom: 11px;
+    }
   }
 
   .main__desc {
     line-height: 26px;
+  }
+
+  .main__desc-catalog {
+    width: 430px;
+    padding-top: 4px;
+    margin-bottom: 9px;
+  }
+
+  .main__desc-form {
+    width: 435px;
+    margin-left: 2px;
   }
 
   .main {
@@ -76,7 +126,7 @@
 
 @media (min-width: $desktop-width) {
   .main__text {
-    padding: 50px 355px;
+    padding: 64px 355px 16px 355px;
   }
 
   .main__text-catalog {
@@ -86,6 +136,7 @@
   }
 
   .main__text-form {
+    height: 105px;
     margin-top: -215px;
     position: relative;
     background-color: white;
@@ -97,5 +148,14 @@
 
   .main--form .main__text {
     padding: 115px 380px 55px;
+  }
+
+  .main__title-form {
+    padding-top: 11px;
+  }
+
+  .main__desc-catalog {
+    margin-left: 5px;
+    margin-bottom: 9px;
   }
 }

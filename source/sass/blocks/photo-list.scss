@@ -1,3 +1,9 @@
+.photos {
+  position: relative;
+  background-color: white;
+  margin-top: -8px;
+}
+
 .photo-list {
   @include reset-list();
 }
